@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    
+    <p>A forma mais simples de se inserir vídeo é a seguinte:</p>
+
+    <video src="midia/video-menor.mp4" width="500" controls></video>
+
+    <p>Contudo, por questão de compatibilidade, é interessante usar diversas sources (com ordem de precedência correta), usando a tag source src, conforme abaixo:</p>
+
+    <video width="500" poster="imagem/paisagem-650.jpg" controls autoplay loop>
+        <source src="midia/video-menor.mp4" type="video/mp4">
+        <source src="midia/video-menor.m4v" type="video/mp4">
+        <source src="midia/video-menor.webm" type="video/webm">
+        <source src="midia/video-menor.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <p>
+        Importante inserir diversas sources para atender a diversos navegadores. <br>
+        A ordem de precedência importa, sempre executará a primeira.
+    </p>
+    
+    <p>O parâmetro poster coloca uma "capa" no vídeo.</p>
+    
+    <p>A técnica acima, com vídeos hospedados no servidor, exige um consumo de banda (dados) muito alto, por isso mesmo o próximo vídeo mostrará outra forma de trabalhar com vídeos.</p>
+
+    <h1>Incorporando Vídeos do YouTube</h1>
+
+    <p>Ao invés de hospedar vídeos no seu computador, é possível incorporar vídeos do próprio youtube.<br>Basta clicar em COMPARTILHAR > INCORPORAR.</p>
+    
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Incorporando Vídeos do Vimeo</h1>
+    <p>Da mesma forma, também é possivel incorporar vídeos do Vimeo, clicando em compartilhar. <br>O Vimeo permite até mais opções de configuração facilitada.</p>
+
+    <iframe src="https://player.vimeo.com/video/421046122?h=076e4f7830&color=ff9933&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <p><a href="https://vimeo.com/421046122">REEL</a> from <a href="https://vimeo.com/houseonfire">House on Fire</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <p>O Vimeo também inlcui, automaticamente, links. Caso não sejam desejados, basta apagar o código acima.</p>
+
+    <p>Fim do código!</p>
+
+</body>
+</html>

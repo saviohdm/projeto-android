@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="a", start="1">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <!--OL = ordered lists; LI = List item-->
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+        <!--O "</li>" é facultativo-->
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <ul type="disc">
+        <!--UL = unordered list-->
+        <!--O "</li>" também é facultativo-->
+        <!--Types: disc, circle, square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Alface</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Juntando Listas versão 1.0</h2>
+    <h3>Minhas Linguagens favoritas</h3>
+    <ol>
+        <li>Antigas:</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas:</li>
+        <ol type="a" start="5"> <!-- O parâmetro start é sempre numérico -->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Meus Jogos Favoritos</h3>
+    <ol>
+        <li>NES</li>
+        <ul type="disc">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="disc">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="disc">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+        <!-- Para colocar o cursor em vários lugares ao mesmo tempo e editar várias tags de forma simultânea, segurar a tecla alt (option no Mac) e clicar onde quer que o cursor fique -->
+    </ol>
+    <h3>Lista de Definições</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site.</dd>
+        <!-- 
+        DL = definition list
+        DT = termo
+        DD = definição -->
+    </dl>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'OldLondon';
+            src: url('fonts/Olondona.otf') format('opentype'), url('fonts/OldLondon.ttf') format('truetype');
+            font-size: normal;
+            font-weight: normal;
+
+            /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+
+        }
+
+        body {
+            font-family: 'OldLondon';
+        }
+
+        h1 {
+            font-family: 'OldLondon', serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>The New York Times</h1>
+    <h2>Eu amo a minha esposa</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias magni et consequatur unde dolores praesentium voluptatibus quam, vel ipsum at, nemo aperiam ad porro ex quaerat amet veritatis reiciendis ratione.</p>
+</body>
+</html>

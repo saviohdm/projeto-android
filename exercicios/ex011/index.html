@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    
+    <!-- A tag Picture permite que trabalhe com imagens, contudo, com várias fontes de imagens. -->
+    <picture>
+        <!-- A tag "source media:type" permite que sejam selecionadas imagens alternativas. Por padrão, será selecionada a imagem G. Contudo, se o width for inferior a 1000px o html automaticamente seleciona a imagem M. Basta aumentar ou diminuir o tamanho da janela que automaticamente a imagem é alterada.
+
+        É possível trabalhar com a ideia de max-width ou min-width. Guanabara prefere trabalhar com a referência de max-width.
+        
+        Para ser perfeccionista e eliminar de vez a barra de rolagem lateral, o max-width pode ser alterado, até corresponder ao quanto desejado. 
+        
+        A ordem das tags source media:type importa. A menor deve ficar em cima, e a menor deve ficar emabaixo.
+        -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+
+    <p>Existem duas formas de inserir áudio.</p>
+
+    <h2>Segue a primeira forma:</h2>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!-- Para aparecer o controle de áudio é necessário inserir o parâmetro "controls".
+    O atribulo autoplay só funciona quando o usuário já interagiu com seu site (deu um clique, rolou a página, etc). Esse comportamento foi adicionado pelo mal uso desse atribulo por alguns sites anos atrás. É muito irritante para o usuário entrar num site e de cara começar a tocar algum áudio.
+    O HTML5 é compatível com os formatos MP3, WAV e OGG.  -->
+
+    <h2>Segue a segunda forma:</h2>
+    <!-- A tag preload faz com que o arquivo seja previamente carregado. Auto, carrega o arquivo todo; metadata, carrega só metadados, e none não carrega nada. -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+    <p>A ordem dentro da tag audio é muito importante, pois tem precedência. Primeiro ele tenta buscar uma mídia, e se não conseguir, ele executa a próxima, e por aí vai. Se não conseguir mídia alguma, ele executa o parágrafo.</p>
+    <p>Dentro da tag audio, inserir a tag "source src". <br>Para o formato MP3 o type deve ser audio/mpeg. No material do curso existem mais informações sobre type de outros formatos.
+    </p>
+    <p>A tag loop faz com que o áudio seja reproduzido continuamente.</p>
+</body>
+</html>

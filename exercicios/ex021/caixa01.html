@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgoldenrodyellow;
+            
+            height: 135px;
+            width: 390px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgrey;
+            */
+
+            border: 10px solid darkgrey;
+            /* shorthand */
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px 10px;
+            top - right - bottom - left
+
+            também pode ser escrito apenas...
+
+            padding: 10px 10px;
+            top e bottom - right e left
+
+            ou...
+            */
+
+            padding: 10px;
+
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+
+            /*
+            margin: 10px 10px 40px 10px;
+            top - rigth - bottom - left
+            */
+
+            margin: 10px auto 10px auto;
+            /* para centralizar a caixa */
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: darkmagenta;
+            */
+
+            outline: 5px dashed darkmagenta;
+            
+        }
+
+        /*
+        Por padrão a tag anchor é inline-level (display: inline;), e a tag h1 é box-level (display: block;).
+
+        Essas características padrões podem ser alteradas mudando o display de block para inline, e vice-versa.
+        */
+
+
+        a {
+            border-width: 10px;
+            border-style: dotted;
+            border-color: royalblue;
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Os parágrafos são exemplos de caixas box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
